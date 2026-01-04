@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Attention", 
+  "version": "1.0.0",
+  "icons": {
+    "48": "images/Element.png",
+    "128": "images/Element.png"
+  },
+  "description": "Improves Instagram, blocks distractions",
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Instagram Allowlist"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["allowlist.txt", "blocklist.txt"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

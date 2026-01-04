@@ -1,0 +1,12 @@
+# Website blocklist (one hostname or domain per line)
+# Examples:
+# x.com
+# www.example.com
+# .example.com    (blocks example.com and all subdomains)
+# *.example.org   (same as .example.org)
+#
+# Edit this file, then reload the extension in chrome://extensions
+
+x.com
+www.ssense.com/en-ca
+www.ssense.com/en-ca/men

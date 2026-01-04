@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Instagram Allowlist</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Instagram Allowlist</h1>
+      <section class="list">
+        <div class="list-header">
+          <h2>Allowed accounts</h2>
+          <button id="refresh-btn" type="button">Refresh</button>
+        </div>
+        <ul id="allowlist"></ul>
+        <p id="empty" class="empty">No accounts allowed yet.</p>
+        <p class="hint">Edit allowlist.txt and reload the extension to apply changes.</p>
+      </section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
